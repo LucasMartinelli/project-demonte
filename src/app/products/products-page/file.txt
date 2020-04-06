@@ -1,0 +1,507 @@
+<router-outlet></router-outlet>
+
+<main class="main">
+        <div class="jumbotron container bg-white shadow-sm" >
+            <h1 class="display-4"></h1>
+            <div class="lead jumbolead"> </div>
+        </div>
+        <div class="container bg-white shadow" id="prod-cnt">
+
+            <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="bolos-tab" data-toggle="tab" href="#bolos" role="tab" aria-controls="bolos"
+                        aria-selected="true">Bolos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="docinhos-tab" data-toggle="tab" href="#docinhos" role="tab" aria-controls="docinhos"
+                        aria-selected="false">Docinhos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="docesmaiores-tab" data-toggle="tab" href="#docesmaiores" role="tab" aria-controls="docesmaiores"
+                        aria-selected="false">Doces Maiores</a>
+                </li>
+            </ul>
+
+            <div class="tab-content pt-2" id="myTabContent">
+                <div class="tab-pane fade show active" id="bolos" role="tabpanel" aria-labelledby="bolos-tab">
+
+                    <div class="row">
+                        <aside id="menu-lateral">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab1" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-pasta-tab" data-toggle="pill" href="#pasta" role="tab"
+                                    aria-controls="pasta" aria-selected="true">Pasta Americana</a>
+                                <a class="nav-link" id="v-pills-naked-tab" data-toggle="pill" href="#naked" role="tab" aria-controls="naked"
+                                    aria-selected="false">Naked Cake</a>
+                                <a class="nav-link" id="v-pills-confeitados-tab" data-toggle="pill" href="#confeitados" role="tab"
+                                    aria-controls="confeitados" aria-selected="false">Confeitados</a>
+                            </div>
+                        </aside>
+                        <article id="produtos-cnt">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="pasta" role="tabpanel" aria-labelledby="v-pills-pasta-tab">
+                                    <h1 class="titulo">Sabores</h1>
+                                    <ul class="sabores-cnt">
+                                    <div class="col1">
+                                        <li>Brigadeiro Belga<div class="pontos"></div><div class="preco">R$ 10,00</div></li>
+                                        <p class="subtitulo">Massa de chocolate, brigadeiro de chocolate belga</p>
+                                        <li>Noir<div class="pontos"></div><div class="preco">R$ 9,00</div></li>
+                                        <p class="subtitulo">Massa de chocolate e creme de cacau belga</p>
+                                        <li>Gianduia com nozes<div class="pontos"></div><div class="preco">R$ 9,00</div></li>
+                                        <p class="subtitulo">Massa de nozes, creme branco e trufa gianduia</p>
+                                        <li>Prestígio<div class="pontos"></div><div class="preco">R$ 8,00</div></li>
+                                        <p class="subtitulo">Massa de chocolate, creme de coco fresco</p>
+                                        <li>Beijinho<div class="pontos"></div><div class="preco">R$ 8,00</div></li>
+                                        <p class="subtitulo">Massa branca, creme de beijinho</p>
+                                        <li>Damasco com doce de leite<div class="pontos"></div><div class="preco">R$ 9,00</div></li>
+                                        <p class="subtitulo">Massa branca, doce de leite e geléia de damasco</p>
+                                    </div>
+                                    <div class="col2">
+                                        <li>Nozes com doce de leite<div class="pontos"></div><div class="preco">R$ 9,00</div></li>
+                                        <p class="subtitulo">Massa de nozes, doce de leite e baba de moça</p>
+                                        <li>Bem casado<div class="pontos"></div><div class="preco">R$ 8,00</div></li>
+                                        <p class="subtitulo">Massa branca com doce de leite queimado</p>
+                                        <li>Ameixa com doce de leite<div class="pontos"></div><div class="preco">R$ 9,00</div></li>
+                                        <p class="subtitulo">Massa branca, creme branco e doce de leite com ameixa</p>
+                                        <li>Nozes com chocolate<div class="pontos"></div><div class="preco">R$ 9,50</div></li>
+                                        <p class="subtitulo">Massa de chocolate, doce de leite, nozes e ganache belga</p>
+                                        <li>Brigadeiro de Ninho com Morango<div class="pontos"></div><div class="preco">R$ 9,00</div></li>
+                                        <p class="subtitulo">Massa branca, brigadeiro de Ninho e geléia de morango</p>
+                                        <li>Brigadeiro de Ninho com Abacaxi<div class="pontos"></div><div class="preco">R$ 9,00</div></li>
+                                        <p class="subtitulo">Massa branca, brigadeiro de Ninho e doce de abacaxi</p>
+                                    </div>
+                                    <div class="notas">Preço base por Fatia ( peso aprox.: 100g )</div>
+                                    </ul>
+                                    <p class="texto">Seu sonho transformado em realidade, tornamos o bolo a peça principal de sua mesa e até mesmo de sua festa. Em qualquer
+                                    ocasião, seja festa infantil, casamento, bodas, batizado, chá de bebê ou outras, encante seus convidados com nossa arte
+                                    feita em pasta de açúcar: a <b>Pasta Americana</b>.</p>
+                                    <h1 class="titulo">Decoração</h1>
+                                    <p class="texto">Desenvolvemos decorações para seu bolo com flores de açúcar ou naturais, personagens e objetos modelados com Pasta Americana, ou mesmo andares <i>fake</i> para complementar seu bolo de andar. Torne seu evento ainda mais inesquecível!</p>
+                                    <h1 class="titulo">Fotos</h1>
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <p class="texto">Conheça mais nosso trabalho visitando a página <a href="sobre.html#portfolio/">Portfólio</a> deste site ou pelo Instagram: <a href="https://instagram.com/demonte.doces/"target="_blank">@demonte.doces</a>.</p>
+                                    <h1 class="titulo">Orçamento</h1>
+                                    <p class="texto">Monte seu pedido em nossa página de encomendas e agilize o processo para obter seu orçamento:</p>
+                                    <div class="btn-cnt"><a href="encomende.html/"><button type="button" class="btn btn-padrao">Monte seu Pedido Online</button></a></div>
+                                    <p class="texto">Caso prefira, tire suas dúvidas e obtenha seu orçamento por e-mail <a href="mailto:contato@demontedoces.com.br">contato@demontedoces.com.br</a> ou
+                                        Whatsapp <a href="https://wa.me/5511985318106" target="_blank">(11) 98531-8106</a>, de segunda à sábado, das 9:00hrs às 18:00hrs.</p>
+                                    <p class="texto">Como alternativa aos bolos com decoração em pasta americana, dispomos de <a href="#">Bolos Fake para
+                                            aluguel</a> e <a class="bolo-corte" href="#">bolos de corte</a>.</p>
+                                </div>
+                                <div class="tab-pane fade" id="naked" role="tabpanel" aria-labelledby="v-pills-naked-tab">
+                                    <h1 class="titulo">Sabores</h1>
+                                    <ul class="sabores-cnt">
+                                        <div class="col1">
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Bem Casado<div class="pontos"></div><div class="preco">R$ 60,00</div></li>
+                                            <p class="subtitulo">Massa de baunilha, creme de doce de leite</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Chocolate com Morango<div class="pontos"></div><div class="preco">R$ 60,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, brigadeiro com morangos</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Red Velvet<div class="pontos"></div><div class="preco">R$ 60,00</div></li>
+                                            <p class="subtitulo">Massa Red Velvet, creme de cheesecake</p>
+                                        </div>
+                                        <div class="col2">
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Oreo<div class="pontos"></div><div class="preco">R$ 60,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, creme de cookies com Oreo</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Ninho com Nutella<div class="pontos"></div><div class="preco">R$ 80,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, brigadeiro de Ninho e Nutella</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Ferrero Rocher<div class="pontos"></div><div class="preco">R$ 80,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, creme de avelã e Ferrero Rocher</p>
+                                        </div>
+                                    <div class="notas">Preço base por Kg ( aprox. 10 fatias )</div>
+                                    </ul>
+                                    <p class="texto">Também conhecido como bolo rústico ou bolo pelado, o Naked Cake chegou para ficar como um estilo tentador graças a seu recheio aparente de dar água na boca e sua decoração charmosa: sempre com muitas frutas e flores para deixá-lo ainda mais bonito e
+                                    gracioso.</p>
+                                    <h1 class="titulo">Decoração</h1>
+                                    <p class="texto">Desenvolvemos decorações para seu bolo com flores de açúcar ou naturais, e deliciosas frutas frescas (sujeito a sazonalidade).</p>
+                                    <h1 class="titulo">Fotos</h1>
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <p class="texto">Conheça mais nosso trabalho visitando a página <a href="sobre.html#portfolio/">Portfólio</a> deste site
+                                        ou pelo Instagram: <a href="https://instagram.com/demonte.doces/" target="_blank">@demonte.doces</a>.</p>
+                                    <h1 class="titulo">Orçamento</h1>
+                                    <p class="texto">Monte seu pedido em nossa página de encomendas e agilize o processo para obter seu orçamento:</p>
+                                    <div class="btn-cnt"><a href="encomende.html/"><button type="button" class="btn btn-padrao">Monte seu Pedido
+                                                Online</button></a></div>
+                                    <p class="texto">Caso prefira, tire suas dúvidas e obtenha seu orçamento por e-mail <a
+                                            href="mailto:contato@demontedoces.com.br">contato@demontedoces.com.br</a> ou
+                                        Whatsapp <a href="https://wa.me/5511985318106" target="_blank">(11) 98531-8106</a>, de segunda à sábado, das 9:00hrs
+                                        às 18:00hrs.</p>
+                                </div>
+                                <div class="tab-pane fade" id="confeitados" role="tabpanel" aria-labelledby="v-pills-confeitados-tab">
+                                    <h1 class="titulo">Sabores</h1>
+                                    <ul class="sabores-cnt">
+                                        <div class="col1">
+                                            <li>Brigadeiro<div class="pontos"></div><div class="preco">R$ 32,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, creme de brigadeiro</p>
+                                            <li>Brigadeiro Belga<div class="pontos"></div><div class="preco">R$ 65,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, brigadeiro de chocolate belga</p>
+                                            <li>Brigadeiro com Morango<div class="pontos"></div><div class="preco">R$ 45,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, brigadeiro e morangos frescos</p>
+                                            <li>Mousse de Chocolate<div class="pontos"></div><div class="preco">R$ 32,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, mousse de chocolate</p>
+                                            <li>Chocolate Amargo<div class="pontos"></div><div class="preco">R$ 40,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, ganache de chocolate 70%</p>
+                                            <li>Nozes com Chocolate<div class="pontos"></div><div class="preco">R$ 50,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, nozes picadas e ganache</p>
+                                            <li>Floresta Negra<div class="pontos"></div><div class="preco">R$ 38,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, chantilly, chocolate e cerejas</p>
+                                            <li>Sensação<div class="pontos"></div><div class="preco">R$ 32,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, mousse de morango e choc.</p>
+                                            <li>Mousse de Maracujá c/ Chocolate<div class="pontos"></div><div class="preco">R$ 32,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, mousse de maracujá e choc.</p>
+                                            <li>Sonho de Valsa<div class="pontos"></div><div class="preco">R$ 40,00</div></li>
+                                            <p class="subtitulo">Massa branca, creme de choc. c/ sonho de valsa</p>
+                                        </div>
+                                        <div class="col2">
+                                            <li>Pessego<div class="pontos"></div><div class="preco">R$ 38,00</div></li>
+                                            <p class="subtitulo">Massa branca, mousse de pessego com pedaços da fruta</p>
+                                            <li>Abacaxi<div class="pontos"></div><div class="preco">R$ 38,00</div></li>
+                                            <p class="subtitulo">Massa branca, mousse de abacaxi com pedaços da fruta</p>
+                                            <li>Mousse de Ninho c/ Abacaxi<div class="pontos"></div><div class="preco">R$ 40,00</div></li>
+                                            <p class="subtitulo">Massa branca, mousse de Ninho com pedaços de abacaxi</p>
+                                            <li>Mousse de Ninho c/ Morango<div class="pontos"></div><div class="preco">R$ 40,00</div></li>
+                                            <p class="subtitulo">Massa branca, mousse de Ninho com pedaços de morango</p>
+                                            <li>Prestígio<div class="pontos"></div><div class="preco">R$ 36,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, brigadeiro de coco</p>
+                                            <li>Beijinho<div class="pontos"></div><div class="preco">R$ 36,00</div></li>
+                                            <p class="subtitulo">Massa branca, brigadeiro de coco</p>
+                                            <li>Doce de Leite c/ Coco<div class="pontos"></div><div class="preco">R$ 36,00</div></li>
+                                            <p class="subtitulo">Massa branca, doce de leite com coco ralado</p>
+                                            <li>Doce de Leite c/ Ameixa<div class="pontos"></div><div class="preco">R$ 60,00</div></li>
+                                            <p class="subtitulo">Massa branca, doce de leite com ameixas</p>
+                                            <li>Nozes com Doce de Leite<div class="pontos"></div><div class="preco">R$ 50,00</div></li>
+                                            <p class="subtitulo">Massa de nozes, doce de leite</p>
+                                            <li>Damasco com Doce de Leite<div class="pontos"></div><div class="preco">R$ 60,00</div></li>
+                                            <p class="subtitulo">Massa branca, doce de leite com geléia de damasco</p>
+                                        </div>
+                                        <div class="notas">Preço base por Kg ( aprox. 10 fatias )</div>
+                                    </ul>
+                                    <p class="texto">Bolos clássicos cobertos com Chantilly, Glacê ou Buttercream, confeitados, espatulados ou ondulados: as opções são muitas para agradar a todos os gostos. Quando dispensam decorações e ornamentos são considerados bolos de corte.</p>
+                                    <h1 class="titulo">Decoração</h1>
+                                    <p class="texto">Desenvolvemos decorações das mais variadas coberturas e cores, flores, acabamentos como o "bolo Kitkat", papel de arroz personalizado e topos de bolo.
+                                        Consulte valores.</p>
+                                    <h1 class="titulo">Fotos</h1>
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <p class="texto">Conheça mais nosso trabalho visitando a página <a href="sobre.html#portfolio/">Portfólio</a> deste site
+                                        ou pelo Instagram: <a href="https://instagram.com/demonte.doces/" target="_blank">@demonte.doces</a>.</p>
+                                    <h1 class="titulo">Orçamento</h1>
+                                    <p class="texto">Monte seu pedido em nossa página de encomendas e agilize o processo para obter seu orçamento:</p>
+                                    <div class="btn-cnt"><a href="encomende.html/"><button type="button" class="btn btn-padrao">Monte seu Pedido
+                                                Online</button></a></div>
+                                    <p class="texto">Caso prefira, tire suas dúvidas e obtenha seu orçamento por e-mail <a
+                                            href="mailto:contato@demontedoces.com.br">contato@demontedoces.com.br</a> ou
+                                        Whatsapp <a href="https://wa.me/5511985318106" target="_blank">(11) 98531-8106</a>, de segunda à sábado, das 9:00hrs
+                                        às 18:00hrs.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="docinhos" role="tabpanel" aria-labelledby="docinhos-tab">
+                    
+                    <div class="row">
+                        <aside id="menu-lateral">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-finos-tab" data-toggle="pill" href="#finos" role="tab"
+                                    aria-controls="finos" aria-selected="true">Doces Finos</a>
+                                <a class="nav-link" id="v-pills-infantil-tab" data-toggle="pill" href="#infantil" role="tab" aria-controls="infantil"
+                                    aria-selected="false">Infantis</a>
+                                <a class="nav-link" id="v-pills-tradicionais-tab" data-toggle="pill" href="#tradicionais" role="tab"
+                                    aria-controls="tradicionais" aria-selected="false">Tradicionais</a>
+                            </div>
+                        </aside>
+                        <article id="produtos-cnt">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="finos" role="tabpanel" aria-labelledby="v-pills-finos-tab">
+                                    <h1 class="titulo">Sabores</h1>
+                                    <ul class="sabores-cnt">
+                                        <div class="col1">
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Camafeu de Nozes<div class="pontos"></div><div class="preco">R$ 2,10</div></li>
+                                            <p class="subtitulo">Recheio de Nozes, cobertura de Fondant</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Surpresa de Uva<div class="pontos"></div><div class="preco">R$ 2,00</div></li>
+                                            <p class="subtitulo">Brigadeiro de ninho com uva fresca</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Bombom Noivinhos<div class="pontos"></div><div class="preco">R$ 2,30</div></li>
+                                            <p class="subtitulo">Bombom de chocolate, recheio de Nutella</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Damasco Recheado<div class="pontos"></div><div class="preco">R$ 3,00</div></li>
+                                            <p class="subtitulo">Damasco com brigadeiro de chocolate</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Hóstia com Iniciais<div class="pontos"></div><div class="preco">R$ 3,20</div></li>
+                                            <p class="subtitulo">Brigadeiro branco com 2 hóstias decoradas</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Delícia de Morango<div class="pontos"></div><div class="preco">R$ 4,00</div></li>
+                                            <p class="subtitulo">Morango com brigadeiro de Ninho e chocolate</p>
+                                            
+                                        </div>
+                                        <div class="col2">
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Encanto de Physalis<div class="pontos"></div><div class="preco">R$ 3,20</div></li>
+                                            <p class="subtitulo">Caixa de chocolate c/ ganache branca e Physalis</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Coração com Brigadeiro<div class="pontos"></div><div class="preco">R$ 3,50</div></li>
+                                            <p class="subtitulo">Coração e alianças de chocolate c/ brigadeiro</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Caixinha Praliné<div class="pontos"></div><div class="preco">R$ 3,20</div></li>
+                                            <p class="subtitulo">Caixa de chocolate recheada com Praliné</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Caixinha com Buquet<div class="pontos"></div><div class="preco">R$ 6,00</div></li>
+                                            <p class="subtitulo">Chocolate branco com brigadeiro de coco</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Mini Bolo de Chocolate<div class="pontos"></div><div class="preco">R$ 7,00</div></li>
+                                            <p class="subtitulo">Chocolate branco, pão de ló e doce de leite</p>
+                                        </div>
+                                    <div class="notas">Preço Unitário ( pedido mínimo por sabor: 25un. )</div>
+                                    </ul>
+                                    <p class="texto">Doces Finos para Casamento Dé Monte: uma seleção especial para o seu evento. Surpreenda seus convidados.</p>
+                                    <h1 class="titulo">Embalagens</h1>
+                                    <p class="texto">Os docinhos são enviados em caixinhas brancas por padrão.</p>
+                                    <h1 class="titulo">Fotos</h1>
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <p class="texto">Conheça mais nosso trabalho visitando a página <a href="sobre.html#portfolio/">Portfólio</a> deste site
+                                        ou pelo Instagram: <a href="https://instagram.com/demonte.doces/" target="_blank">@demonte.doces</a>.</p>
+                                    <h1 class="titulo">Orçamento</h1>
+                                    <p class="texto">Monte seu pedido em nossa página de encomendas e agilize o processo para obter seu orçamento:</p>
+                                    <div class="btn-cnt"><a href="encomende.html/"><button type="button" class="btn btn-padrao">Monte seu Pedido
+                                                Online</button></a></div>
+                                    <p class="texto">Caso prefira, tire suas dúvidas e obtenha seu orçamento por e-mail <a
+                                            href="mailto:contato@demontedoces.com.br">contato@demontedoces.com.br</a> ou
+                                        Whatsapp <a href="https://wa.me/5511985318106" target="_blank">(11) 98531-8106</a>, de segunda à sábado, das 9:00hrs
+                                        às 18:00hrs.</p>
+                                </div>
+                                <div class="tab-pane fade" id="infantil" role="tabpanel" aria-labelledby="v-pills-infantil-tab">
+                                    <h1 class="titulo">Sabores</h1>
+                                    <ul class="sabores-cnt">
+                                        <div class="col2">
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Pasta de Leite Ninho<div class="pontos"></div><div class="preco">R$ 3,00</div></li>
+                                            <p class="subtitulo">Docinhos modelados em pasta de leite Ninho</p>
+                                        </div>
+                                        <div class="notas">Preço Unitário</div>
+                                    </ul>
+                                    <p class="texto">Os docinhos modelados são personalizados conforme o tema desejado, ideais para festas infantis.</p>
+                                    <h1 class="titulo">Embalagens</h1>
+                                    <p class="texto">Os docinhos são enviados em caixinhas brancas por padrão.</p>
+                                    <h1 class="titulo">Fotos</h1>
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <p class="texto">Conheça mais nosso trabalho visitando a página <a href="sobre.html#portfolio/">Portfólio</a> deste site
+                                        ou pelo Instagram: <a href="https://instagram.com/demonte.doces/" target="_blank">@demonte.doces</a>.</p>
+                                    <h1 class="titulo">Orçamento</h1>
+                                    <p class="texto">Monte seu pedido em nossa página de encomendas e agilize o processo para obter seu orçamento:</p>
+                                    <div class="btn-cnt"><a href="encomende.html/"><button type="button" class="btn btn-padrao">Monte seu Pedido
+                                                Online</button></a></div>
+                                    <p class="texto">Caso prefira, tire suas dúvidas e obtenha seu orçamento por e-mail <a
+                                            href="mailto:contato@demontedoces.com.br">contato@demontedoces.com.br</a> ou
+                                        Whatsapp <a href="https://wa.me/5511985318106" target="_blank">(11) 98531-8106</a>, de segunda à sábado, das 9:00hrs
+                                        às 18:00hrs.</p>
+                                </div>
+                                <div class="tab-pane fade" id="tradicionais" role="tabpanel" aria-labelledby="v-pills-tradicionais-tab">
+                                    <h1 class="titulo">Sabores</h1>
+                                    <ul class="sabores-cnt">
+                                        <div class="col1">
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Brigadeiro<div class="pontos"></div><div class="preco">R$ 60,00</div></li>
+                                            <p class="subtitulo">Brigadeiro de chocolate, diversas opções de confeitos</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Beijinho<div class="pontos"></div><div class="preco">R$ 60,00</div></li>
+                                            <p class="subtitulo">Brigadeiro de coco</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Bicho de Pé<div class="pontos"></div><div class="preco">R$ 60,00</div></li>
+                                            <p class="subtitulo">Brigadeiro de morango</p>
+                                        </div>
+                                        <div class="col2">
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Casadinho<div class="pontos"></div><div class="preco">R$ 60,00</div></li>
+                                            <p class="subtitulo">Brigadeiro branco e de chocolate</p>
+                                            <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                            <li>Palha Italiana<div class="pontos"></div><div class="preco">R$ 70,00</div></li>
+                                            <p class="subtitulo">Massa de chocolate, biscoitos de maisena</p>
+                                        </div>
+                                    <div class="notas">Preço do Cento</div>
+                                    </ul>
+                                    <p class="texto">Doces Tradicionais com uma pitada especial de carinho, que não podem faltar na sua festa.</p>
+                                    <h1 class="titulo">Embalagens</h1>
+                                    <p class="texto">Os docinhos são enviados em forminhas simples por padrão, com as cores a critério do cliente.</p>
+                                    <h1 class="titulo">Fotos</h1>
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <p class="texto">Conheça mais nosso trabalho visitando a página <a href="sobre.html#portfolio/">Portfólio</a> deste site
+                                        ou pelo Instagram: <a href="https://instagram.com/demonte.doces/" target="_blank">@demonte.doces</a>.</p>
+                                    <h1 class="titulo">Orçamento</h1>
+                                    <p class="texto">Monte seu pedido em nossa página de encomendas e agilize o processo para obter seu orçamento:</p>
+                                    <div class="btn-cnt"><a href="encomende.html/"><button type="button" class="btn btn-padrao">Monte seu Pedido
+                                                Online</button></a></div>
+                                    <p class="texto">Caso prefira, tire suas dúvidas e obtenha seu orçamento por e-mail <a
+                                            href="mailto:contato@demontedoces.com.br">contato@demontedoces.com.br</a> ou
+                                        Whatsapp <a href="https://wa.me/5511985318106" target="_blank">(11) 98531-8106</a>, de segunda à sábado, das 9:00hrs
+                                        às 18:00hrs.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="docesmaiores" role="tabpanel" aria-labelledby="docesmaiores-tab">
+                    
+                    <div class="row">
+                        <aside id="menu-lateral">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab3" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-cupcakes-tab" data-toggle="pill" href="#cupcakes" role="tab"
+                                    aria-controls="cupcakes" aria-selected="true">Cupcakes</a>
+                                <a class="nav-link" id="v-pills-pirulitos-tab" data-toggle="pill" href="#pirulitos" role="tab" aria-controls="pirulitos"
+                                    aria-selected="false">Pirulitos Decorados</a>
+                                <a class="nav-link" id="v-pills-casados-tab" data-toggle="pill" href="#casados" role="tab"
+                                    aria-controls="casados" aria-selected="false">Bem Casados</a>
+                            </div>
+                        </aside>
+                        <article id="produtos-cnt">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="cupcakes" role="tabpanel" aria-labelledby="v-pills-cupcakes-tab">
+                                    <h1 class="titulo">Sabores</h1>
+                                    <ul class="sabores-cnt">
+                                    <div class="col1">
+                                        <h1 class="titulo-sabores"><div class="cor-dif">Tamanho</div> Mini</h1>
+                                        <li>Chocolate<div class="pontos"></div><div class="preco">R$ 2,50</div></li>
+                                        <p class="subtitulo">Massa de chocolate, mousse de chocolate</p>
+                                        <li>Morango<div class="pontos"></div><div class="preco">R$ 2,50</div></li>
+                                        <p class="subtitulo">Massa branca, mousse de morango</p>
+                                        <li>Doce de Leite<div class="pontos"></div><div class="preco">R$ 2,50</div></li>
+                                        <p class="subtitulo">Massa branca, doce de leite e chantilly</p>
+                                    </div>
+                                    <div class="col2">
+                                        <h1 class="titulo-sabores"><div class="cor-dif">Tamanho</div> Padrão</h1>
+                                        <li>Chocolate<div class="pontos"></div><div class="preco">R$ 4,00</div></li>
+                                        <p class="subtitulo">Massa de chocolate, mousse de chocolate</p>
+                                        <li>Morango<div class="pontos"></div><div class="preco">R$ 4,00</div></li>
+                                        <p class="subtitulo">Massa branca, mousse de morango</p>
+                                        <li>Doce de Leite<div class="pontos"></div><div class="preco">R$ 4,00</div></li>
+                                        <p class="subtitulo">Massa branca, doce de leite e chantilly</p>
+                                    </div>
+                                    <div class="notas">Preço unitário</div>
+                                    </ul>
+                                    <p class="texto"></p>
+                                    <h1 class="titulo">Decoração</h1>
+                                    <p class="texto">Preços acima referem-se aos Cupcakes com cobertura de chantilly (e confeitos conforme opção do cliente). 
+                                        Cupcakes também podem ser decorados com Pasta Americana, conforme opções abaixo:</p>
+                                    <ul class="sabores-cnt">
+                                    <div class="col1">
+                                        <h1 class="titulo-sabores"><div class="cor-dif">Decoração</div> 2D</h1>
+                                        <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                        <li>Tamanho Mini<div class="pontos"></div><div class="preco"><div class="cor-dif">a partir de</div> R$ 3,50</div></li>
+                                        <li>Tamanho Padrão<div class="pontos"></div><div class="preco"><div class="cor-dif">a partir de</div> R$ 6,00</div></li>
+                                    </div>
+                                    <div class="col2">
+                                        <h1 class="titulo-sabores"><div class="cor-dif">Decoração</div> 3D</h1>
+                                        <img class="sabores-prod" src="/imagens/img2-tmb.jpg">
+                                        <li>Tamanho Mini<div class="pontos"></div><div class="preco"><div class="cor-dif">a partir de</div> R$ 5,50</div></li>
+                                        <li>Tamanho Padrão<div class="pontos"></div><div class="preco"><div class="cor-dif">a partir de</div> R$ 8,50</div></li>
+                                    </div>
+                                    <div class="notas2">Preço "com decoração", unitário</div>
+                                    </ul>
+                                    <h1 class="titulo">Fotos</h1>
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <p class="texto">Conheça mais nosso trabalho visitando a página <a href="sobre.html#portfolio/">Portfólio</a> deste site ou pelo Instagram: <a href="https://instagram.com/demonte.doces/"target="_blank">@demonte.doces</a>.</p>
+                                    <h1 class="titulo">Orçamento</h1>
+                                    <p class="texto">Monte seu pedido em nossa página de encomendas e agilize o processo para obter seu orçamento:</p>
+                                    <div class="btn-cnt"><a href="encomende.html/"><button type="button" class="btn btn-padrao">Monte seu Pedido Online</button></a></div>
+                                    <p class="texto">Caso prefira, tire suas dúvidas e obtenha seu orçamento por e-mail <a href="mailto:contato@demontedoces.com.br">contato@demontedoces.com.br</a> ou
+                                        Whatsapp <a href="https://wa.me/5511985318106" target="_blank">(11) 98531-8106</a>, de segunda à sábado, das 9:00hrs às 18:00hrs.</p>
+                                    <p class="texto">Como alternativa aos bolos com decoração em pasta americana, dispomos de <a href="#">Bolos Fake para
+                                            aluguel</a> e <a class="bolo-corte" href="#">bolos de corte</a>.</p>
+                                </div>
+                                <div class="tab-pane fade" id="pirulitos" role="tabpanel" aria-labelledby="v-pills-pirulitos-tab">
+                                    <h1 class="titulo">Sabores</h1>
+                                    <ul class="sabores-cnt">
+                                    <div class="col1">
+                                        <h1 class="titulo-sabores"><div class="cor-dif">Pirulitos</div> Maciços</h1>
+                                        <li>Chocolate ao Leite<div class="pontos"></div><div class="preco">R$ 1,80</div></li>
+                                        <p class="subtitulo">Pirulito de puro chocolate ao leite</p>
+                                    </div>
+                                    <div class="col2">
+                                        <h1 class="titulo-sabores"><div class="cor-dif">Pirulitos</div> Recheados</h1>
+                                        <li>Doce de Leite<div class="pontos"></div><div class="preco">R$ 3,50</div></li>
+                                        <p class="subtitulo">Cobertura de chocolate, 2 biscoitos e doce de leite</p>
+                                    </div>
+                                    <div class="notas">Preço "sem decoração", unitário</div>
+                                    </ul>
+                                    <p class="texto"></p>
+                                    <h1 class="titulo">Decoração</h1>
+                                    <p class="texto">Nossos pirulitos podem ser decorados com Pasta Americana de um dos lados, conforme tabela de preços abaixo:</p>
+                                    <ul class="sabores-cnt">
+                                    <div class="col2">
+                                        <h1 class="titulo-sabores"><div class="cor-dif">Decoração</div> 2D</h1>
+                                        <li>Pirulito Maciço<div class="pontos"></div><div class="preco"><div class="cor-dif">a partir de</div> R$ 5,00</div></li>
+                                        <li>Pirulito Recheado<div class="pontos"></div><div class="preco"><div class="cor-dif">a partir de</div> R$ 6,50</div></li>
+                                    </div>
+                                    <div class="notas2">Preço "com decoração", unitário</div>
+                                    </ul>
+                                    <h1 class="titulo">Fotos</h1>
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <p class="texto">Conheça mais nosso trabalho visitando a página <a href="sobre.html#portfolio/">Portfólio</a> deste site ou pelo Instagram: <a href="https://instagram.com/demonte.doces/"target="_blank">@demonte.doces</a>.</p>
+                                    <h1 class="titulo">Orçamento</h1>
+                                    <p class="texto">Monte seu pedido em nossa página de encomendas e agilize o processo para obter seu orçamento:</p>
+                                    <div class="btn-cnt"><a href="encomende.html/"><button type="button" class="btn btn-padrao">Monte seu Pedido Online</button></a></div>
+                                    <p class="texto">Caso prefira, tire suas dúvidas e obtenha seu orçamento por e-mail <a href="mailto:contato@demontedoces.com.br">contato@demontedoces.com.br</a> ou
+                                        Whatsapp <a href="https://wa.me/5511985318106" target="_blank">(11) 98531-8106</a>, de segunda à sábado, das 9:00hrs às 18:00hrs.</p>
+                                    <p class="texto">Como alternativa aos bolos com decoração em pasta americana, dispomos de <a href="#">Bolos Fake para
+                                            aluguel</a> e <a class="bolo-corte" href="#">bolos de corte</a>.</p>
+                                </div>
+                                <div class="tab-pane fade" id="casados" role="tabpanel" aria-labelledby="v-pills-casados-tab">
+                                    <h1 class="titulo">Sabores</h1>
+                                    <ul class="sabores-cnt">
+                                        <div class="col2">
+                                            
+                                            <li>Tradicional<div class="pontos"></div><div class="preco">R$ 2,00</div></li>
+                                            <p class="subtitulo">Massa branca com doce de leite</p>
+                                        </div>
+                                        <div class="notas">Preço Unitário</div>
+                                    </ul>
+                                    <p class="texto"></p>
+                                    <h1 class="titulo">Embalagens</h1>
+                                    <p class="texto">Os Bem Casados são enviados em embalagem tradicional.</p>
+                                    <h1 class="titulo">Fotos</h1>
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <img class="galeria-prod" src="/imagens/img-tmb.jpg">
+                                    <p class="texto">Conheça mais nosso trabalho visitando a página <a href="sobre.html#portfolio/">Portfólio</a> deste site
+                                        ou pelo Instagram: <a href="https://instagram.com/demonte.doces/" target="_blank">@demonte.doces</a>.</p>
+                                    <h1 class="titulo">Orçamento</h1>
+                                    <p class="texto">Monte seu pedido em nossa página de encomendas e agilize o processo para obter seu orçamento:</p>
+                                    <div class="btn-cnt"><a href="encomende.html/"><button type="button" class="btn btn-padrao">Monte seu Pedido
+                                                Online</button></a></div>
+                                    <p class="texto">Caso prefira, tire suas dúvidas e obtenha seu orçamento por e-mail <a
+                                            href="mailto:contato@demontedoces.com.br">contato@demontedoces.com.br</a> ou
+                                        Whatsapp <a href="https://wa.me/5511985318106" target="_blank">(11) 98531-8106</a>, de segunda à sábado, das 9:00hrs
+                                        às 18:00hrs.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>

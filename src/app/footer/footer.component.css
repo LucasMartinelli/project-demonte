@@ -1,0 +1,140 @@
+footer {
+    margin-top: 50px;
+    background-color: #ca99b0;
+}
+
+.linha1-cnt {
+    background-color: #ca99b0;
+    border-top: 1px solid #ebd;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.linha2-cnt {
+    background-color: #b1869a;
+}
+
+footer a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fdfafb;
+    transition: all 300ms ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.footer-row {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-linha1 {
+    background-color: #ca99b0;
+    color: #fdfafb;
+    padding: 0;
+    padding:4px 4%;
+    margin: 30px 0px;
+    font-size: 18px;
+
+}
+
+.ft-linha1 img {
+    width: 50%;
+    max-width: 280px;
+    max-height: 280px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+}
+
+.ft-linha1 h2 {
+    font-family: 'Mouse Memoirs', sans-serif;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    margin-bottom: 13px;
+}
+
+.ft-linha1 p {
+    margin-bottom: 0px;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f1e1e9;
+}
+
+.ft-linha1 i {
+    color: #ecd5e0;
+    font-size: 15px;
+}
+
+
+.ftln1-col1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+@media (min-width: 1200px) {
+    .ftln1-col2 {
+        border-left: 4px dotted  #b1869a;
+        border-right: 4px dotted  #b1869a;
+    }
+
+    .footer-row {
+        flex-direction: row;
+    }
+}
+
+ .ft-linha2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #b1869a;
+    color: #f1d7e3;
+    padding: 0px 40px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+ }
+
+ .ft-linha2 p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.ft-linha2 h2 {
+   margin: 0;
+   text-align: center;
+}
+
+ @media (max-width: 765px) {
+    .ft-linha1 {
+        padding:0px 12%;
+        margin: 7px 0px;
+    }
+
+    .ftln1-col1 {
+       margin-top: 23px; 
+    }
+
+    .ft-linha1 h2 {
+        margin-bottom: 1px;
+        margin-left: -2px;
+        margin-top: 0px;
+    }
+
+    .ft-linha1 p {
+    margin-top: 2px;
+    }
+
+    .ft-linha2 { 
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    
+ }

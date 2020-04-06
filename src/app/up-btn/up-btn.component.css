@@ -1,0 +1,40 @@
+.botao-pracima {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: 100px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #fcfcfc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    transition: all 300ms ease;
+    z-index: 100;
+    cursor: hand;
+    cursor: pointer; 
+}
+
+.botao-pracima i {
+    line-height: 50px;
+    font-size: 18px;
+    color: #d14d8b;
+    
+}
+
+@media (min-width: 641px) {
+.botao-pracima:hover {
+
+    background-color: #e291b7;
+    transition: all 300ms ease;
+}
+
+.botao-pracima:hover i {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    transition: all 300ms ease;
+}
+}

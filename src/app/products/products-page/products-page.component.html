@@ -1,0 +1,36 @@
+
+
+<main class="main">
+        <div appParallax [ratio]="0.6" class="jumbotron container bg-white shadow-sm">
+            <h1 class="display-4">{{categoria}}</h1>
+            <div class="lead jumbolead">{{subcategoria}}</div>
+        </div>
+        <div class="container bg-white shadow" id="prod-cnt">
+
+            <ul class="nav nav-tabs nav-fill" id="myTab">
+                <li class="nav-item">
+                    <a class="nav-link" id="bolos-tab" routerLink="bolos" routerLinkActive="active">Bolos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="docinhos-tab" routerLink="docinhos" routerLinkActive="active">Docinhos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="docesmaiores-tab" routerLink="doces" routerLinkActive="active">Doces Maiores</a>
+                </li>
+            </ul>
+
+            
+                <router-outlet></router-outlet>
+                
+                <!--
+                <div class="tab-pane fade show active" id="bolos" role="tabpanel" aria-labelledby="bolos-tab">
+                </div>
+                <div class="tab-pane fade" id="docinhos" role="tabpanel" aria-labelledby="docinhos-tab">
+                </div>
+                <div class="tab-pane fade" id="docesmaiores" role="tabpanel" aria-labelledby="docesmaiores-tab">
+                </div>
+                -->
+    
+
+        </div>
+    </main>

@@ -1,0 +1,105 @@
+    <main class="main">
+    <div appParallax [ratio]="0.6" class="container bg-white shadow-sm cnt-carousel">
+            
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/index/hero0.jpg" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-md-block" appParallax [ratio]="0.1">
+                            <h5 class="slide1-linha1">Nosso trabalho é transformar</h5>
+                            <h3 class="slide1-linha2">Sonhos em Realidade</h3>
+                            <button type="button" (click)="scroll()" class="btn btn-padrao slide1-botao">Saiba mais</button>
+                        </div>
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-left"></i>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <i class="fas fa-chevron-right"></i>
+                    <span class="sr-only">Next</span>
+                    </a> 
+            </div>
+    </div>
+    <div id="produtos"></div>    
+    <div class="container bg-white shadow cnt-main">
+        <div class="row home-titulo">
+            <h1>O que amamos fazer</h1>
+        </div>
+        <div class="row linha1pai">
+            <div class="col linha1">
+                <img src="assets/img/index/icone-bolo.jpg">
+                <h3>Bolos</h3>
+                <p style="margin-left: 15px;">
+                    <a routerLink="../produtos/bolos/pasta"><i class="fas fa-heart"></i> Pasta Americana</a><br>
+                    <a routerLink="../produtos/bolos/naked"><i class="fas fa-heart"></i> Naked Cake</a><br>
+                    <a routerLink="../produtos/bolos/confeitados"><i class="fas fa-heart"></i> Confeitados</a>
+                </p>
+                <a routerLink="../produtos/bolos"><button type="button" class="btn btn-padrao">Veja Mais</button></a>
+            </div>
+            <div class="col linha1">
+                <img src="assets/img/index/icone-brigadeiro.jpg">
+                <h3>Docinhos</h3>
+                <p>
+                    <a routerLink="../produtos/docinhos/finos"><i class="fas fa-heart"></i> Doces Finos</a><br>
+                    <a routerLink="../produtos/docinhos/infantis"><i class="fas fa-heart"></i> Infantis</a><br>
+                    <a routerLink="../produtos/docinhos/tradicionais"><i class="fas fa-heart"></i> Tradicionais</a>
+                </p>
+                <a routerLink="../produtos/docinhos"><button type="button" class="btn btn-padrao">Veja Mais</button></a>
+            </div>
+            <div class="col linha1">
+                <img src="assets/img/index/icone-cupcake.jpg">
+                <h3>Doces Maiores</h3>
+                <p style="margin-left: 15px;">
+                    <a routerLink="../produtos/doces/cupcakes"><i class="fas fa-heart"></i> Cupcakes</a><br>
+                    <a routerLink="../produtos/doces/pirulitos"><i class="fas fa-heart"></i> Pirulitos Decorados</a><br>
+                    <a routerLink="../produtos/doces/bemcasados"><i class="fas fa-heart"></i> Bem Casados</a>
+                </p>
+                <a routerLink="../produtos/doces"><button type="button" class="btn btn-padrao">Veja Mais</button></a>
+            </div>
+        </div>
+
+        <!-- <div class="row home-titulo bgalt">
+                <h1>Um pouco sobre nós</h1>
+        </div>
+        <div class="row bgalt">
+            <div class="col linha2">
+                <p>Um pouco de arte, um pouco de confeitaria. </p>
+                <a href="/sobre.html#quemsomos/"><button type="button" class="btn btn-padrao">Conheça Mais</button></a>
+            </div>
+            <div class="col-5 linha2">
+                <img src="/imagens/index/quemsomos.jpg" class="thumbnail">
+            </div>
+        </div> -->
+
+        <div class="row home-titulo bgalt">
+                <h1>Galeria de fotos</h1>
+        </div>
+
+                <div class="your-class bgalt">
+                        
+                </div>
+                <div class="row linha3 bgalt">
+                        <a href="/sobre.html#portfolio/"><button type="button" class="btn btn-padrao">Veja nosso Portfólio completo</button></a>
+                </div>
+        <div class="row home-titulo">
+                <h1>Clientes satisfeitos &nbsp; <i class="far fa-heart"></i></h1>
+        </div>
+        
+        <div class="depoimentos">
+                <div class="slider-img">
+                    <p>"Depoimento depoimento depoimento depoimento depoimento depoimento."</p>
+                    <h6>- Fulano de tal</h6>  
+                </div>
+                <div class="slider-img">
+                    <p>"Depoimento depoimento depoimento depoimento depoimento depoimento."</p>
+                    <h6>- Fulano de tal</h6>   
+                </div>
+                 
+        </div>
+        <div class="row linha4">
+            <a href="/sobre.html#depoimentos/"><button type="button" class="btn btn-padrao">Veja Todos</button></a>
+        </div>
+    </div>
+    </main>
