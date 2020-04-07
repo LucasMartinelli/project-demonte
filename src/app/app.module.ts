@@ -27,7 +27,7 @@ import { DirectivesModule } from './directives.module';
   ],
   imports: [
     BrowserModule,
-    ProductsModule,
+    //ProductsModule,
     AppRoutingModule,
     DirectivesModule
   ],

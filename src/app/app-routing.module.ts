@@ -16,8 +16,9 @@ const routerConfig: Routes = [
     },
     {
         path: 'produtos',
-        loadChildren: () =>
-        import('./products/products.module').then(m => m.ProductsModule)
+        loadChildren: './products/products.module#ProductsModule'
+        //loadChildren: () =>
+        //import('./products/products.module').then(m => m.ProductsModule)
     },
     {
         path: '',

@@ -245,7 +245,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3.0rem;
 }
 
 .linha1 img {
@@ -255,8 +255,8 @@
     border: 0px solid white;
     border-radius: 60px;
     box-shadow: 0 2px 7px rgba(0,0,0,0.12);
-    margin-top: -15px;
-    margin-bottom: 20px;
+    margin-top: -10px;
+    margin-bottom: 23px;
     transition: all 500ms ease;
     
 }
@@ -265,7 +265,9 @@
     font-family: 'Mouse Memoirs', sans-serif;
     color: #d14d8b;
     margin-bottom: 15px;
+    text-align: center;
 }
+
 
 .linha1 i {
     color: #e291b7;
@@ -275,12 +277,25 @@
 }
 
 .linha1 p {
-    line-height: 23px;
+    line-height: 30px;
   }
 
 .linha1 a, .linha1 a:hover, .linha1 a:visited {
     color: #454545;
   }
+
+.prod-link {
+  transition: all 200ms ease;
+}
+
+.prod-link:hover {
+  color: #e291b7 !important;
+}
+
+.prod-link:hover i {
+  color: #F2B1C7;
+  animation: scaleIcon 0.23s normal ease;
+}
 
 .linha1 .btn-padrao {
     margin-top: 7px;
@@ -301,7 +316,7 @@
       
   }
 
-  @keyframes scale {
+@keyframes scale {
     0% {
         transform: translate(0, 0px) scale(1,1);
       }
@@ -309,7 +324,8 @@
         transform: rotate(3deg) translate(0, -4px) scale(1.05,1.05);
       }
       
-  }
+}
+
 
 .linha1pai div:hover i {
     animation: infinite-spinning 1.6s infinite linear;
