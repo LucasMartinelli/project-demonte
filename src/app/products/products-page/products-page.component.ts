@@ -18,6 +18,8 @@ export class ProductsPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+     window.scrollTo(0, 0);
+     
   	this.myJumbo.emitirCateg.subscribe(
       categ => this.categoria = categ
     );

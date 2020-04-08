@@ -8,15 +8,18 @@ import { AboutComponent } from './about/about.component';
 const routerConfig: Routes = [
     {
         path: 'home',
-        component: HomeComponent
+        component: HomeComponent,
+        //data: {animation: 'Home'}
     },
     {
         path: 'sobre',
-        component: AboutComponent
+        component: AboutComponent,
+        data: {animation: 'Products'}
     },
     {
         path: 'produtos',
-        loadChildren: './products/products.module#ProductsModule'
+        loadChildren: './products/products.module#ProductsModule',
+        //data: {animation: 'Products'}
         //loadChildren: () =>
         //import('./products/products.module').then(m => m.ProductsModule)
     },

@@ -1,7 +1,7 @@
 <header class="header">
-    <div class="container cnt-menu" id="nvbr" appSticky>
-            <a routerLink="home"><div class="logo"><img src="assets/img/demontelogo.png"></div></a>
-        <nav class="navbar navbar-expand-xl navbar-light bg-white shadow-sm rounded" id="nvbr2">
+    <!--<div class="container cnt-menu" id="nvbr">-->
+            <a routerLink="home"><div class="logo" [ngClass]="{'sticky-logo':sticky,'top-logo':!sticky}"><img src="assets/img/demontelogo.png"></div></a>
+        <nav class="navbar navbar-expand-xl navbar-light bg-white shadow-sm" id="nvbr2" [ngClass]="{'sticky-navbar':sticky,'top-navbar':!sticky}">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-navicon"></i>
             </button>
@@ -15,7 +15,7 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" role="button" aria-haspopup="true" aria-expanded="false" routerLink="produtos" routerLinkActive="ativo">
+                        <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" routerLink="produtos" routerLinkActive="ativo">
                             <i class="fas fa-birthday-cake mini-icon"></i> 
                             Nossos Produtos
                         </a>
@@ -26,7 +26,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" role="button" aria-haspopup="true" aria-expanded="false" routerLink="sobre" routerLinkActive="ativo">
+                        <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" routerLink="sobre" routerLinkActive="ativo">
                             <i class="fas fa-store mini-icon"></i> 
                             Sobre Nós
                         </a>
@@ -61,6 +61,6 @@
                 </ul>
             </div>
         </nav>
-    </div>
-    <div class="fundo"></div>
+    <!--</div>
+    <div class="fundo"></div>-->
     </header>

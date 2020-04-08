@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+	sticky: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {	
+  }
+
+  @HostListener("window:scroll", ["$event"])
+  onWindowScroll(event) {
+    if (window.scrollY > 60) {
+      this.sticky = true;
+    } else {
+      this.sticky = false;
+    }
   }
 
 }

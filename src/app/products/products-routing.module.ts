@@ -50,7 +50,7 @@ const routerConfig2: Routes = [
                 { path: '', redirectTo: 'cupcakes', pathMatch: 'prefix'}
               ]
             },
-            { path: '', redirectTo: 'bolos', pathMatch: 'prefix'}
+            { path: '', redirectTo: 'bolos/pasta', pathMatch: 'full'}
         ]
     },
 

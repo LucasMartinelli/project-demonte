@@ -70,27 +70,27 @@
 .slide1-linha1 {
     font-size: 2.25rem;
     margin-left: -15px;
-	-webkit-animation: slide1-linha1 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: slide1-linha1 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation-delay: .8s;
+	-webkit-animation: slide1-linha1 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide1-linha1 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: .4s;
 }
 
 .slide1-linha2 {
     font-size: 5.25rem;
     margin-top: -20px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-	-webkit-animation: slide1-linha2 2.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-            animation: slide1-linha2 2.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-            animation-delay: 2s;
+	-webkit-animation: slide1-linha2 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: slide1-linha2 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation-delay: 1.0s;
 }
 
 .slide1-botao {
     margin-top: 15px;
     margin-left: 40px;
     padding: 8px 75px;
-	-webkit-animation: slide1-botao 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-            animation: slide1-botao 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-            animation-delay: 2.7s;
+	-webkit-animation: slide1-botao 1.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: slide1-botao 1.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation-delay: 2.0s;
 }
 
 @media screen and (max-width: 765px) {

@@ -38,8 +38,11 @@
     transition-property: background-position;
     /* background-attachment: absolute; */
     background-image: linear-gradient(to bottom, rgba(255, 240, 251, 0.4), rgba(255, 240, 251, 0.4)), url('assets/img/fundo.png');
-    
   }
+
+  .cnt {
+  min-height: 150vh;
+}
 
   a:hover {text-decoration: none;}
 

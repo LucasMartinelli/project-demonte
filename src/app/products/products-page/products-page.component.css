@@ -54,6 +54,7 @@
     margin-top: 300px;
     border-radius: 10px;
     z-index: 2 !important;
+    min-height: 80vh;
 }
 
 #myTab {
