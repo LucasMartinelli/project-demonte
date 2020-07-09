@@ -35,16 +35,15 @@ footer a:hover {
     background-color: #ca99b0;
     color: #fdfafb;
     padding: 0;
-    padding:4px 4%;
-    margin: 30px 0px;
+    padding:4px 5%;
+    margin: 23px 0px;
     font-size: 18px;
 
 }
 
 .ft-linha1 img {
-    width: 50%;
-    max-width: 280px;
-    max-height: 280px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 10px;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
 }
@@ -54,6 +53,10 @@ footer a:hover {
     text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
     margin-bottom: 13px;
 }
+
+/* .ft-linha1 a {
+    font-size: 16px;
+} */
 
 .ft-linha1 p {
     margin-bottom: 0px;
@@ -65,7 +68,8 @@ footer a:hover {
 
 .ft-linha1 i {
     color: #ecd5e0;
-    font-size: 15px;
+    font-size: 14px;
+    margin-right: 3px;
 }
 
 
@@ -81,8 +85,8 @@ footer a:hover {
 }
 @media (min-width: 1200px) {
     .ftln1-col2 {
-        border-left: 4px dotted  #b1869a;
-        border-right: 4px dotted  #b1869a;
+        border-left: 4px dotted  rgba(0,0,0,0.07);
+        border-right: 4px dotted  rgba(0,0,0,0.07);
     }
 
     .footer-row {

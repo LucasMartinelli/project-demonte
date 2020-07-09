@@ -1,12 +1,14 @@
     <main class="main">
-    <div appParallax [ratio]="0.6" class="container bg-white shadow-sm cnt-carousel">
+        <div class="carousel-row"></div>
             
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="cnt-carousel">
+                
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" >
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img/index/hero0.jpg" class="d-block w-100" alt="">
-                        <div class="carousel-caption d-md-block" appParallax [ratio]="0.1">
-                            <h5 class="slide1-linha1">Nosso trabalho é transformar</h5>
+                        <img src="assets/img/index/hero0.jpg" class="d-block w-100" alt="" >
+                        <div class="carousel-caption d-md-block" appParallax [ratio]="-0.1">
+                            <h5 class="slide1-linha1">Nossa missão é transformar</h5>
                             <h3 class="slide1-linha2">Sonhos em Realidade</h3>
                             <button type="button" (click)="scroll()" class="btn btn-padrao slide1-botao">Saiba mais</button>
                         </div>
@@ -22,18 +24,19 @@
                     </a> 
             </div>
     </div>
+    
     <div id="produtos"></div>    
-    <div class="container bg-white shadow cnt-main">
+    <div class="container bg-white cnt-main">
         <div class="row home-titulo">
             <h1>O que amamos fazer</h1>
         </div>
         <div class="row linha1pai">
             <div class="col linha1">
                 <a routerLink="../produtos/bolos">
-                    <img src="assets/img/index/icone-bolo.jpg">
-                    <h3>Bolos</h3>
+                    <div class="c1-img"><img src="assets/img/index/icone-bolo.jpg"></div>
+                    <h3 class="c1">Bolos</h3>
                 </a>
-                <p style="margin-left: 15px;">
+                <p style="margin-left: 15px;" class="c1">
                     <a routerLink="../produtos/bolos/pasta" class="prod-link">
                         <i class="fas fa-heart"></i> Pasta Americana
                     </a><br>
@@ -48,10 +51,10 @@
             </div>
             <div class="col linha1">
                 <a routerLink="../produtos/docinhos">
-                    <img src="assets/img/index/icone-brigadeiro.jpg">
-                    <h3>Docinhos</h3>
+                    <div class="c2-img"><img src="assets/img/index/icone-brigadeiro.jpg"></div>
+                    <h3 class="c2">Docinhos</h3>
                 </a>
-                <p>
+                <p class="c2">
                     <a routerLink="../produtos/docinhos/finos" class="prod-link">
                         <i class="fas fa-heart"></i> Doces Finos
                     </a><br>
@@ -66,10 +69,10 @@
             </div>
             <div class="col linha1">
                 <a routerLink="../produtos/doces">
-                    <img src="assets/img/index/icone-cupcake.jpg">
-                    <h3>Doces Maiores</h3>
+                    <div class="c3-img"><img src="assets/img/index/icone-cupcake.jpg"></div>
+                    <h3 class="c3">Doces Maiores</h3>
                 </a>
-                <p style="margin-left: 15px;">
+                <p style="margin-left: 15px;" class="c3">
                     <a routerLink="../produtos/doces/cupcakes" class="prod-link">
                         <i class="fas fa-heart"></i> Cupcakes
                     </a><br>
@@ -97,14 +100,16 @@
             </div>
         </div> -->
 
-        <div class="row home-titulo bgalt">
+        <div class="row home-titulo">
                 <h1>Galeria de fotos</h1>
         </div>
 
-                <div class="your-class bgalt">
-                        
+                <div class="your-class">
+                    <div class="dumb-img">&nbsp;</div>
+                    <div class="dumb-img">&nbsp;</div>
+                    <div class="dumb-img">&nbsp;</div>
                 </div>
-                <div class="row linha3 bgalt">
+                <div class="row linha3">
                         <a href="/sobre.html#portfolio/"><button type="button" class="btn btn-padrao">Veja nosso Portfólio completo</button></a>
                 </div>
         <div class="row home-titulo">

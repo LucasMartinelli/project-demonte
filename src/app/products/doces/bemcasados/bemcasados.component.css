@@ -1,3 +1,19 @@
+#casados {
+    animation: slide-entrar .23s ease both;
+}
+
+    @-webkit-keyframes slide-entrar {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+      
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
 .titulo {
     font-family: 'Indie Flower', cursive;
     margin-top: 34px;

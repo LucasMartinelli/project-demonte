@@ -8,6 +8,22 @@
     transition: all 150ms ease;
 }
 
+#menu-lateral {
+    animation: tab-entrar .23s ease both;
+}
+
+    @keyframes tab-entrar {
+    0% {
+      opacity: 0.5;
+      transform: translateX(2px);
+      
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+}
+
 #menu-lateral .nav {
     position: sticky;
     top: 120px;

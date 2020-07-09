@@ -30,14 +30,14 @@
     padding: 0px;
     overflow-x: hidden !important;
     margin: 0;
-    background-color: #f0f0f0;
-    background-image: url("assets/img/fundo.png");
+    background-color: #fff;
+    /* background-image: url("assets/img/fundo.png");
     background-attachment: fixed;
     background-position: 0 0;
-    transition: 0s linear;
-    transition-property: background-position;
+    transition: 0s linear; */
+    /* transition-property: background-position; */
     /* background-attachment: absolute; */
-    background-image: linear-gradient(to bottom, rgba(255, 240, 251, 0.4), rgba(255, 240, 251, 0.4)), url('assets/img/fundo.png');
+    /* background-image: linear-gradient(to bottom, rgba(255, 240, 251, 0.4), rgba(255, 240, 251, 0.4)), url('assets/img/fundo.png'); */
   }
 
   .cnt {

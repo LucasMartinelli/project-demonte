@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
 	 scroll(): void {
-	    window.scrollTo(0, 360);
+	    window.scrollTo(0, 230);
 	};
 
 }

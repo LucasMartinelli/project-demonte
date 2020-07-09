@@ -1,4 +1,20 @@
 #menu-lateral {
+    animation: tab-entrar .23s ease both;
+}
+
+    @keyframes tab-entrar {
+    0% {
+      opacity: 0.5;
+      transform: translateX(2px);
+      
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+#menu-lateral {
     padding-left: 4%;
     padding-right: 0;
     padding-top: 2.5rem;
@@ -132,4 +148,6 @@
     min-height: 500px;
     border-left: 2px solid #e0bfce80;
     background-color: transparent;
+    
 }
+
