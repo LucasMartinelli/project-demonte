@@ -1,20 +1,46 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation  } from '@angular/core';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
-  ngOnInit(): void {
-  	 window.scrollTo(0, 0);
+  
+  config: SwiperConfigInterface = {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      bulletActiveClass: 'teste',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      600: {
+        centeredSlides: false,
+        slidesPerView: 3,
+        pagination: false,
+      }
+    }
   }
 
+  ngOnInit(): void {
+     window.scrollTo(0, 0);
+  };
+  
+
 	 scroll(): void {
-	    window.scrollTo(0, 230);
-	};
+	    window.scrollTo(0, 210);
+  };
+  
+  
 
 }

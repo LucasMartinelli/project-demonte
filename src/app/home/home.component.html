@@ -30,62 +30,62 @@
         <div class="row home-titulo">
             <h1>O que amamos fazer</h1>
         </div>
-        <div class="row linha1pai">
-            <div class="col linha1">
-                <a routerLink="../produtos/bolos">
-                    <div class="c1-img"><img src="assets/img/index/icone-bolo.jpg"></div>
-                    <h3 class="c1">Bolos</h3>
-                </a>
-                <p style="margin-left: 15px;" class="c1">
-                    <a routerLink="../produtos/bolos/pasta" class="prod-link">
-                        <i class="fas fa-heart"></i> Pasta Americana
-                    </a><br>
-                    <a routerLink="../produtos/bolos/naked" class="prod-link">
-                        <i class="fas fa-heart"></i> Naked Cake
-                    </a><br>
-                    <a routerLink="../produtos/bolos/confeitados" class="prod-link">
-                        <i class="fas fa-heart"></i> Confeitados
-                    </a>
-                </p>
-                <!--<a routerLink="../produtos/bolos"><button type="button" class="btn btn-padrao">Veja Mais</button></a>-->
-            </div>
-            <div class="col linha1">
-                <a routerLink="../produtos/docinhos">
-                    <div class="c2-img"><img src="assets/img/index/icone-brigadeiro.jpg"></div>
-                    <h3 class="c2">Docinhos</h3>
-                </a>
-                <p class="c2">
-                    <a routerLink="../produtos/docinhos/finos" class="prod-link">
-                        <i class="fas fa-heart"></i> Doces Finos
-                    </a><br>
-                    <a routerLink="../produtos/docinhos/infantis" class="prod-link">
-                        <i class="fas fa-heart"></i> Infantis
-                    </a><br>
-                    <a routerLink="../produtos/docinhos/tradicionais" class="prod-link">
-                        <i class="fas fa-heart"></i> Tradicionais
-                    </a>
-                </p>
-                <!--<a routerLink="../produtos/docinhos"><button type="button" class="btn btn-padrao">Veja Mais</button></a>-->
-            </div>
-            <div class="col linha1">
-                <a routerLink="../produtos/doces">
-                    <div class="c3-img"><img src="assets/img/index/icone-cupcake.jpg"></div>
-                    <h3 class="c3">Doces Maiores</h3>
-                </a>
-                <p style="margin-left: 15px;" class="c3">
-                    <a routerLink="../produtos/doces/cupcakes" class="prod-link">
-                        <i class="fas fa-heart"></i> Cupcakes
-                    </a><br>
-                    <a routerLink="../produtos/doces/pirulitos" class="prod-link">
-                        <i class="fas fa-heart"></i> Pirulitos Decorados
-                    </a><br>
-                    <a routerLink="../produtos/doces/bemcasados" class="prod-link">
-                        <i class="fas fa-heart"></i> Bem Casados
-                    </a>
-                </p>
-                <!--<a routerLink="../produtos/doces"><button type="button" class="btn btn-padrao">Veja Mais</button></a>-->
-            </div>
-        </div>
+
+
+<swiper [config]="config" class="row linha1pai">
+    <div class="linha1">
+        <a routerLink="../produtos/bolos">
+            <div class="c1-img"><img src="assets/img/index/icone-bolo.jpg"></div>
+            <h3 class="c1">Bolos</h3>
+        </a>
+        <p style="margin-left: 15px;" class="c1">
+            <a routerLink="../produtos/bolos/pasta" class="prod-link">
+                <i class="fas fa-heart"></i> Pasta Americana
+            </a><br>
+            <a routerLink="../produtos/bolos/naked" class="prod-link">
+                <i class="fas fa-heart"></i> Naked Cake
+            </a><br>
+            <a routerLink="../produtos/bolos/confeitados" class="prod-link">
+                <i class="fas fa-heart"></i> Confeitados
+            </a>
+        </p>
+    </div>
+    <div class="linha1">
+        <a routerLink="../produtos/docinhos">
+            <div class="c2-img"><img src="assets/img/index/icone-brigadeiro.jpg"></div>
+            <h3 class="c2">Docinhos</h3>
+        </a>
+        <p class="c2">
+            <a routerLink="../produtos/docinhos/finos" class="prod-link">
+                <i class="fas fa-heart"></i> Doces Finos
+            </a><br>
+            <a routerLink="../produtos/docinhos/infantis" class="prod-link">
+                <i class="fas fa-heart"></i> Infantis
+            </a><br>
+            <a routerLink="../produtos/docinhos/tradicionais" class="prod-link">
+                <i class="fas fa-heart"></i> Tradicionais
+            </a>
+        </p>
+    </div>
+    <div class="linha1">
+        <a routerLink="../produtos/doces">
+            <div class="c3-img"><img src="assets/img/index/icone-cupcake.jpg"></div>
+            <h3 class="c3">Doces Maiores</h3>
+        </a>
+        <p style="margin-left: 15px;" class="c3">
+            <a routerLink="../produtos/doces/cupcakes" class="prod-link">
+                <i class="fas fa-heart"></i> Cupcakes
+            </a><br>
+            <a routerLink="../produtos/doces/pirulitos" class="prod-link">
+                <i class="fas fa-heart"></i> Pirulitos Decorados
+            </a><br>
+            <a routerLink="../produtos/doces/bemcasados" class="prod-link">
+                <i class="fas fa-heart"></i> Bem Casados
+            </a>
+        </p>
+    </div>
+</swiper>
+
 
         <!-- <div class="row home-titulo bgalt">
                 <h1>Um pouco sobre nós</h1>

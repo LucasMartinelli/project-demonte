@@ -14,6 +14,7 @@ import { WhatsappBtnComponent } from './whatsapp-btn/whatsapp-btn.component';
 import { UpBtnComponent } from './up-btn/up-btn.component';
 import { DirectivesModule } from './directives.module';
 
+import { SwiperModule } from 'ngx-swiper-wrapper';
 
 
 @NgModule({
@@ -31,9 +32,11 @@ import { DirectivesModule } from './directives.module';
     BrowserModule,
     AppRoutingModule,
     DirectivesModule,
+    SwiperModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: []
 })
 
 export class AppModule { }
