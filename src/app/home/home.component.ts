@@ -38,7 +38,10 @@ export class HomeComponent implements OnInit {
   
 
 	 scroll(): void {
-	    window.scrollTo(0, 210);
+     if (window.innerWidth > 1000) { window.scrollTo(0, 350); } else
+     if (window.innerWidth > 765) { window.scrollTo(0, 420); } else
+     if (window.innerWidth > 640) { window.scrollTo(0, 250); }
+     else { window.scrollTo(0, 210); }
   };
   
   

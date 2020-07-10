@@ -23,8 +23,8 @@
     font-weight: 900;
     color: #fff;
     padding-bottom: 100px;
-    transition: background-image 500ms ease;
-    animation: jumbo-entrar2 .5s ease both;
+    animation: jumbo-entrar2 1s ease both;
+    animation-delay: .3s;
 }
 
   
@@ -36,7 +36,7 @@
     margin: 7px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
     animation: jumbo-entrar .8s ease both;
-    animation-delay: .4s;
+    animation-delay: .5s;
 }
 
 .jumbotron .jumbolead {
@@ -44,7 +44,7 @@
     line-height: 5rem;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5) !important;
     animation: jumbo-entrar .8s ease both;
-    animation-delay: .55s;
+    animation-delay: .65s;
 }  
 
 
@@ -71,6 +71,7 @@
 }
 
 
+
 /* MAIN -------------------------------- */
 
 #prod-cnt {
@@ -78,6 +79,7 @@
     position: relative;
     max-width: 1200px;
     margin-top: 300px;
+    top: 0 !important;
     border-radius: 10px;
     z-index: 2 !important;
     min-height: 80vh;
@@ -152,20 +154,26 @@
 }
 
 @media (max-width: 640px) { 
+#prod-cnt {
+    margin-top: 150px;
+}
+
 .nav-tabs .nav-link {
-    font-size: 24px;
-    line-height: 48px;
+    font-size: 21px;
+    line-height: 40px;
     padding: 0;
+    height: 40px;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover {
-    line-height: 56px;
+    line-height: 40px;
     margin-top: -8px;
+    height: 48px;
 }
 
 .jumbotron {
-    max-height: 120px;
-    padding-bottom: 21px;
+    max-height: 150px;
+    padding-bottom: 30px;
 }
 
 .jumbotron .jumbolead {
@@ -188,11 +196,8 @@ body {overflow-x: hidden;}
 }
 }
 
+.main {
+    overflow:hidden;
+}
 
-
-/* MAIN --------------------------------------- MENU LATERAL ----------- */
-
-
-
-/* MAIN --------------------------------------- CONTEUDO DAS ABAS ----------- */
-
+body, html { overflow:hidden; } 

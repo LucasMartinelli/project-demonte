@@ -1,3 +1,8 @@
+.main {
+  overflow: hidden;
+  height: 100%;
+}
+
 /* CAROUSEL -------------------------------- */
 .carousel-row {
   background-color: #FBF0F4;
@@ -8,6 +13,7 @@
   background-position-y: -150px;
   animation: slide1-entrar2 3.5s ease both;
   animation-delay: 0.23s;
+  overflow: hidden;
 }
 
 
@@ -24,6 +30,7 @@
     max-width: 1500px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     background-color: #FCFAFB;
+    overflow: hidden;
 }
 
 .carousel-item active {
@@ -33,6 +40,7 @@
 
 .carousel, .carousel-inner, .carousel-item, .d-block {
   z-index: 0;
+  overflow: hidden;
 }
 
 .carousel i {
@@ -59,6 +67,7 @@
     margin-right: auto;
     margin-top: -90px;
     animation: slide1-entrar 3s ease both;
+    overflow: hidden;
   }
 
   @-webkit-keyframes slide1-entrar {
@@ -85,7 +94,7 @@
 
   .carousel-inner > .carousel-item {
     max-height: 450px;
-    border-radius: 10px;
+    border-radius: 0px;
  }
 
  .carousel-caption {
@@ -188,7 +197,6 @@
     .slide1-linha1 {
         font-size: 1.4rem;
         text-align: center;
-        font-weight: 900;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -196,10 +204,12 @@
     .slide1-linha2 {
         font-size: 2.3rem;
         text-align: center;
-        font-weight: 900;
         margin-top: -7px;
         margin-left: 0px;
         margin-right: 0px;
+        width: 200%;
+        
+        transform: translateX(-25%);
         color: #7a1b47;
     }
 
@@ -223,7 +233,11 @@
 .cnt-carousel {
     top:0px;
     height: 200px;
-    min-width: 470px;
+    /* min-width: 470px; */
+}
+
+.carousel-item > img {
+    min-width: 500px;
 }
 }
 
@@ -304,9 +318,14 @@
 
 .cnt-main {
   position: relative;
-  max-width: 1200px;
   margin-top: -50px;
   border-radius: 10px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100%;
+  max-width: 1200px;
   z-index: 2 !important;
   animation: main-entrar .3s ease both;
 }
@@ -340,8 +359,12 @@
     font-family: 'Indie Flower', cursive;
     color: #e291b7;
     z-index: 10 !important;
-    
 }
+
+.home-titulo:first-child {
+    animation: main-entrar .5s ease both;
+    animation-delay: .2s;
+  } 
 
 .home-titulo:not(:first-child) {
   border-top: 5px dotted #FAF0F5;
@@ -528,18 +551,19 @@ span .teste {
       
 }
 
+@media(min-width:600px) {
 
-.linha1pai div:hover i {
+.linha1:hover i {
     animation: infinite-spinning 1.6s infinite linear;
 }
 
-.linha1pai div:hover img {
+.linha1:hover img {
     box-shadow: 0 0px 23px rgba(255, 122, 155, 0.3);
     animation-delay: 1s;
     animation: infinite-spinning2 1.6s infinite linear, scale 0.4s normal ease;
 }
 
-
+}
 
 
 
