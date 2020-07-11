@@ -11,7 +11,14 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  mobileMenuOpen = false;
+  
+  toggler() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
   ngOnInit(): void {	
+
   }
 
   @HostListener("window:scroll", ["$event"])
@@ -24,3 +31,5 @@ export class HeaderComponent implements OnInit {
   }
 
 }
+
+
