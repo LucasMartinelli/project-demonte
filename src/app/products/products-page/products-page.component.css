@@ -181,18 +181,25 @@
     height: 37px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
+    transition: all 50ms ease; 
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover {
-    font-size: 21px;
-    line-height: 41px;
-    margin-top: -8px;
+    font-size: 20px;
+    line-height: 43px;
+    margin-top: -6px;
     height: 43px;
+}
+
+.router-outlet {
+    position: absolute;
+    top: 167px;
+    width: 100%;
 }
 
 .jumbotron {
     max-height: 135px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
 }
 
 .jumbotron .jumbolead {

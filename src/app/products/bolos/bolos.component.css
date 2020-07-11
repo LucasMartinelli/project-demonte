@@ -1,16 +1,14 @@
 #menu-lateral {
-    animation: tab-entrar2 .2s ease both;
+    animation: tab-entrar2 1s ease both;
 }
 
 @keyframes tab-entrar2 {
     0% {
-      opacity: 0.3;
-      transform: translateY(-2px);
+      opacity: 0.4;
       
     }
     100% {
       opacity: 1;
-      transform: translateY(0px);
     }
   }
 

@@ -1,12 +1,12 @@
 #pasta {
-    animation: slide-entrar2 .2s ease both;
+    animation: slide-entrar2 .7s ease both;
     animation-delay: .05s;
 }
 
     @keyframes slide-entrar2 {
     0% {
       opacity: 0;
-      transform: translateY(-15px);
+      transform: translateY(-5px);
       
     }
     100% {

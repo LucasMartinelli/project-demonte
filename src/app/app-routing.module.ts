@@ -23,11 +23,11 @@ const routerConfig: Routes = [
         //loadChildren: () =>
         //import('./products/products.module').then(m => m.ProductsModule)
     },
-    {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
-    },
+    // {
+    //     path: '',
+    //     redirectTo: 'home',
+    //     pathMatch: 'full'
+    // },
     {
         path: '**',
         redirectTo: 'home',
