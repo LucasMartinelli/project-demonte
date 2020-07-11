@@ -7,7 +7,7 @@ import { AboutComponent } from './about/about.component';
 
 const routerConfig: Routes = [
     {
-        path: 'home',
+        path: '',
         component: HomeComponent,
         //data: {animation: 'Home'}
     },

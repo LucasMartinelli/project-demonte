@@ -12,6 +12,28 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
   
+  imgs = [1,2,3,4,5,6,7,8,9,10];
+  depoimentos = [
+    {
+      texto: "depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 ",
+      pessoa: "fulano de tal1",
+    },
+    {
+      texto: "depoimento2 depoimento2 depoimento2 depoimento2 depoimento2 depoimento2 depoimento2 <br> depoimento2 depoimento2 depoimento2",
+      pessoa: "fulano de tal2",
+    },
+    {
+      texto: "depoimento depoimento3 depoimento3 depoimento3",
+      pessoa: "fulano de tal3",
+    },
+  ];
+
+
+  closeButtonText: String = "Fechar";
+
+
+
+
   config: SwiperConfigInterface = {
     direction: 'horizontal',
     slidesPerView: 1,
@@ -32,10 +54,74 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  config2: SwiperConfigInterface = {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    preloadImages: false,
+    lazy: true,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      bulletActiveClass: 'teste',
+    },
+    breakpoints: {
+      // when window width is >=
+      600: {
+        centeredSlides: false,
+        slidesPerView: 3,
+        
+      }
+    }
+  }
+
+  config3: SwiperConfigInterface = {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      bulletActiveClass: 'teste',
+    },
+  }
+
+
+  imgClick() {
+    this.config2['autoplay'] = false;
+  }
+  lightboxClose() {
+    this.config2['autoplay'] = true;
+  }
+
+
+
   ngOnInit(): void {
      window.scrollTo(0, 0);
   };
   
+
+
 
 	 scroll(): void {
      if (window.innerWidth > 1000) { window.scrollTo(0, 350); } else

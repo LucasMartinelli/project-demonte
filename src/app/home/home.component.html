@@ -104,32 +104,28 @@
                 <h1>Galeria de fotos</h1>
         </div>
 
-                <div class="your-class">
-                    <div class="dumb-img">&nbsp;</div>
-                    <div class="dumb-img">&nbsp;</div>
-                    <div class="dumb-img">&nbsp;</div>
-                </div>
+                <swiper [config]="config2" class="row galeria">
+                    <div class="slider-img" *ngFor="let img of imgs">
+                        <img data-src="../../assets/img/index/galeria/img{{img}}-tmb.jpg" class="swiper-lazy" 
+                        (click)="imgClick()" lightbox [fullImage]="{path: '../../assets/img/index/galeria/img'+img+'.jpg'}"
+                        [closeButtonText]="closeButtonText" closing-state:animation-end="lightboxClose()">
+                    </div>
+                </swiper>
                 <div class="row linha3">
-                        <a href="/sobre.html#portfolio/"><button type="button" class="btn btn-padrao">Veja nosso Portfólio completo</button></a>
+                        <a href="https://www.instagram.com/demonte.doces" target="_blank"><button type="button" class="btn btn-padrao">Ver Portfólio completo</button></a>
                 </div>
-        <div class="row home-titulo">
+        
+        <div class="row home-titulo depoim">
                 <h1>Clientes satisfeitos &nbsp; <i class="far fa-heart"></i></h1>
         </div>
-        
-        <div class="depoimentos">
-                <div class="slider-img">
-                    <p>"Depoimento depoimento depoimento depoimento depoimento depoimento."</p>
-                    <h6>- Fulano de tal</h6>  
+
+            <swiper [config]="config3" class="depoimentos">
+                <div class="slider-dep" *ngFor="let depoimento of depoimentos">
+                    <p>"{{depoimento.texto}}"</p>
+                    <h6>- {{depoimento.pessoa}}</h6>  
                 </div>
-                <div class="slider-img">
-                    <p>"Depoimento depoimento depoimento depoimento depoimento depoimento."</p>
-                    <h6>- Fulano de tal</h6>   
-                </div>
-                 
-        </div>
-        <div class="row linha4">
-            <a href="/sobre.html#depoimentos/"><button type="button" class="btn btn-padrao">Veja Todos</button></a>
-        </div>
+            </swiper>
+            
         
     </div>
     </main>

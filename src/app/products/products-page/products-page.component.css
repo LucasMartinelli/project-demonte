@@ -153,26 +153,45 @@
 
 }
 
+@media (min-width: 641px) and (max-width: 1199px) { 
+.jumbotron {
+    height: 230px;
+    top: 70px;
+    padding-bottom: 50px;
+}
+
+.jumbotron h1 {
+    bottom: 4.2rem;
+}
+
+#prod-cnt {
+    margin-top: 300px;
+}
+}
+
 @media (max-width: 640px) { 
 #prod-cnt {
-    margin-top: 150px;
+    margin-top: 130px;
 }
 
 .nav-tabs .nav-link {
-    font-size: 21px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 37px;
     padding: 0;
-    height: 40px;
+    height: 37px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover {
-    line-height: 40px;
+    font-size: 21px;
+    line-height: 41px;
     margin-top: -8px;
-    height: 48px;
+    height: 43px;
 }
 
 .jumbotron {
-    max-height: 150px;
+    max-height: 135px;
     padding-bottom: 30px;
 }
 
@@ -188,12 +207,6 @@
 }
 
 body {overflow-x: hidden;}
-}
-
-@media (min-width: 641px) and (max-width: 1199px) { 
-.jumbotron {
-    max-height: 200px;
-}
 }
 
 .main {

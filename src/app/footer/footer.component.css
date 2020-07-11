@@ -1,6 +1,6 @@
 footer {
     position: relative;
-    margin-top: 50px;
+    margin-top: 70px;
     background-color: #ca99b0;
     bottom: 0;
     left: 0;
@@ -40,15 +40,15 @@ footer a:hover {
     background-color: #ca99b0;
     color: #fdfafb;
     padding: 0;
-    padding:4px 5%;
+    padding:10px 5%;
     margin: 23px 0px;
     font-size: 18px;
 
 }
 
 .ft-linha1 img {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     margin-bottom: 10px;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
 }
@@ -57,6 +57,7 @@ footer a:hover {
     font-family: 'Mouse Memoirs', sans-serif;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
     margin-bottom: 13px;
+    font-size: 2rem;
 }
 
 /* .ft-linha1 a {
@@ -81,6 +82,7 @@ footer a:hover {
 .ftln1-col1 {
     font-family: 'Amatic SC', cursive;
     font-size: 24px;
+    line-height: 30px;
     font-weight: 500;
     display: flex;
     flex-direction: column;
@@ -88,14 +90,35 @@ footer a:hover {
     text-align: center;
     
 }
-@media (min-width: 1200px) {
-    .ftln1-col2 {
+
+.ftln1-col2 {
         border-left: 4px dotted  rgba(0,0,0,0.07);
         border-right: 4px dotted  rgba(0,0,0,0.07);
+        border-top: none;
+        border-bottom: none;
     }
 
     .footer-row {
         flex-direction: row;
+    }
+
+@media (max-width: 1200px) {
+    .ftln1-col2 {
+        border-top: 4px dotted  rgba(0,0,0,0.07);
+        border-bottom: 4px dotted  rgba(0,0,0,0.07);
+        border-left:none;
+        border-right:none;
+        margin:0;
+        padding: 1.7rem 0;
+    }
+
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .ft-linha1 {
+        text-align: center;
+        
     }
 }
 
@@ -122,19 +145,35 @@ footer a:hover {
 }
 
  @media (max-width: 765px) {
+
+    footer {
+        margin-top: 23px;
+    }
+    
     .ft-linha1 {
-        padding:0px 12%;
-        margin: 7px 0px;
+        padding:0px 7%;
+        margin: 10px 0px;
     }
 
     .ftln1-col1 {
-       margin-top: 23px; 
+       margin-top: 30px; 
+       padding-left: 15%;
+       padding-right: 15%;
+    }
+
+    .ftln1-col2 {
+        border:none;
+    }
+
+    .ftln1-col3 {
+        margin-bottom: 1.5rem;
     }
 
     .ft-linha1 h2 {
-        margin-bottom: 1px;
+        margin-bottom: 3px;
         margin-left: -2px;
         margin-top: 0px;
+        font-size: 1.8rem;
     }
 
     .ft-linha1 p {
@@ -143,7 +182,17 @@ footer a:hover {
 
     .ft-linha2 { 
         justify-content: center;
+        flex-direction: column;
+        height: 100px;
         padding: 0px 20px;
+    }
+
+    .ft-linha2 p {
+        margin-bottom: 10px;
+    }
+
+    .ft-linha2 h2 {
+        word-spacing: -3px;
     }
     
  }

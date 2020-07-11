@@ -15,6 +15,7 @@ import { UpBtnComponent } from './up-btn/up-btn.component';
 import { DirectivesModule } from './directives.module';
 
 import { SwiperModule } from 'ngx-swiper-wrapper';
+import { CrystalLightboxModule } from '@crystalui/angular-lightbox';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { SwiperModule } from 'ngx-swiper-wrapper';
     AppRoutingModule,
     DirectivesModule,
     SwiperModule,
+    CrystalLightboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
