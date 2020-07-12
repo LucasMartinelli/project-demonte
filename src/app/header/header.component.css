@@ -136,7 +136,21 @@ justify-content: flex-end;
     line-height: 47px !important;
     background-color: #FAF0F7;
     box-shadow: inset 0px 0px 2px rgba(0,0,0,0.05);
+    color: #a15679 !important;
+}
+
+@media (min-width:1200px) {
+.ativo {
     border-bottom: 3px solid #E9D7E2; /* D4B7C0*/
+}
+
+.ativo:hover {
+    border-bottom: 3px solid #e291b7 !important;
+}
+}
+
+ .ativo .mini-icon {
+    color: #d14d8b71;
 }
 
 .subativo {
@@ -144,9 +158,7 @@ justify-content: flex-end;
     box-shadow: inset 0px 0px 2px rgba(0,0,0,0.05);
 }
 
-.ativo:hover {
-    border-bottom: 3px solid #e291b7 !important;
-}
+
 
 .navbar .nav-link:hover, .navbar .dropdown-item:hover {
     background-color: #e291b7;
@@ -291,7 +303,7 @@ justify-content: flex-end;
     }
 
     .menu-fundo {
-        background-color: #fff;
+        background-color: rgba(39, 30, 35, 0.7);
         left: 0;
         top: 0;
         position: fixed;
@@ -300,11 +312,11 @@ justify-content: flex-end;
         width: 100vw;
         overflow: hidden;
         opacity: 0;
-        transition: 500ms opacity ease;
+        transition: 300ms opacity ease;
+        transition-delay: 50ms;
     }
 
     .aberto-fundo {
-        background-color: rgba(39, 30, 35, 0.7);
         z-index: 3; 
         opacity: 1;
         
@@ -390,6 +402,13 @@ justify-content: flex-end;
 
 
 }
+
+@media (min-width: 641px) {
+    .menu-fundo, .menu-mobile, .navbar-toggler-mobile {
+        display: none;
+    }
+}
+
 
 .dropdown-menu {
     margin-top: 0px;

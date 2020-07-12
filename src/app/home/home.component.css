@@ -1,6 +1,7 @@
 .main {
   overflow: hidden;
   height: 100%;
+  background-color: #fff;
 }
 
 /* CAROUSEL -------------------------------- */
@@ -315,13 +316,8 @@
 /* MAIN --------------------------------------- LINHA 1 ----------- */
 
 
-@media (max-width: 640px) { 
-  #produtos {
-    position: absolute; top: 200px;
-  }
-}
-
 .cnt-main {
+  background-color: #fff;
   position: relative;
   margin-top: -50px;
   border-radius: 10px;
@@ -393,15 +389,7 @@
   }
 }
 
-@media (max-width: 599px) { 
-  .linha1pai {
-    margin-bottom: 2.3rem;
-  }
-  .home-titulo:first-child {
-    height: 6rem;
-    padding-top: 1.5rem;
-  } 
-}
+
 
 .bgalt {
     background-color: #FAF0F5;
@@ -423,12 +411,16 @@
     margin-top: 0;
 }
 
+.swiper-pagination {
+  opacity: 0.7 !important;
+}
+
 
 span .teste {
     color: #d14d8b !important;
     opacity: 1;
     background-color: #d14d8b !important;
-    border: none;
+    border: none !important;
     z-index: 2;
 
 }
@@ -465,7 +457,7 @@ span .teste {
     padding: 20px;
     border: 0px solid white;
     border-radius: 60px;
-    box-shadow: 0 2px 7px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 7px rgba(0,0,0,0.07);
     margin-top: -10px;
     margin-bottom: 23px;
     transition: all 500ms ease;
@@ -821,10 +813,10 @@ span .teste {
     }
 
     .depoimentos p {
-        font-size: .7rem;
+        font-size: .9rem;
     }
     .depoimentos h6 {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         margin-left: 0;
         width: auto;
         text-align: center;
@@ -837,4 +829,40 @@ span .teste {
     display: flex;
     justify-content: center;
     padding-bottom: 3.5rem;
+}
+
+@media (max-width: 599px) { 
+.linha1 img {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    margin-top: -10px;
+    margin-bottom: 23px;
+    transition: all 500ms ease;
+    
+}
+
+  .linha1pai {
+    margin-bottom: 2rem;
+  }
+
+  .home-titulo {
+    height: 5rem;
+    margin-bottom: 1.5rem;
+  } 
+  .home-titulo:first-child {
+    margin-bottom: -1rem;
+    margin-top: 0.5rem;
+  } 
+
+  .linha3, .linha3 .btn-padrao {
+    margin-bottom: 5px;
+  }
+  .linha3 .btn-padrao {
+  padding-left: 40px;
+  padding-right: 40px;
+  }
 }

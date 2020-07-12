@@ -76,7 +76,7 @@
 
 /* MAIN -------------------------------- */
 
-#prod-cnt {
+#sobre-cnt {
     padding: 0 !important;
     position: relative;
     max-width: 1200px;
@@ -87,6 +87,12 @@
     min-height: 80vh;
     animation: prod-entrar .5s ease both;
     animation-delay: 0.1s;
+}
+
+@media (max-width: 1199px) { 
+  #sobre-cnt { 
+    border-radius: 0px;
+  }
 }
 
     @keyframes prod-entrar {
@@ -166,13 +172,13 @@
     bottom: 4.2rem;
 }
 
-#prod-cnt {
+#sobre-cnt {
     margin-top: 300px;
 }
 }
 
 @media (max-width: 640px) { 
-#prod-cnt {
+#sobre-cnt {
     margin-top: 130px;
 }
 
@@ -201,12 +207,12 @@
 
 .jumbotron {
     max-height: 135px;
-    padding-bottom: 27px;
+    padding-bottom: 35px;
 }
 
 .jumbotron .jumbolead {
-    font-size: 3rem;
-    line-height: 3.0rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
 }
 
 .jumbotron h1 {
@@ -218,7 +224,7 @@
 body {overflow-x: hidden;}
 }
 
-.main {
+.mainsobre {
     overflow:hidden;
 }
 

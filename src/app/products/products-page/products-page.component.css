@@ -12,7 +12,7 @@
     height: 365px;
     width: 100%;
     border: none;
-    z-index: -1;
+    z-index: 0;
 
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@
     margin-top: 300px;
     top: 0 !important;
     border-radius: 10px;
-    z-index: 2 !important;
+    z-index: 1 !important;
     min-height: 80vh;
     animation: prod-entrar .5s ease both;
     animation-delay: 0.1s;
@@ -153,6 +153,7 @@
 
 }
 
+
 @media (min-width: 641px) and (max-width: 1199px) { 
 .jumbotron {
     height: 230px;
@@ -174,19 +175,19 @@
     margin-top: 130px;
 }
 
-.nav-tabs .nav-link {
+.nav-tabs .nav-link, .nav-tabs .nav-link:hover, .nav-tabs .nav-link:active {
     font-size: 20px;
+    margin-top: 0;
     line-height: 37px;
     padding: 0;
     height: 37px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    transition: all 50ms ease; 
+    transition: all 230ms ease; 
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:hover {
     font-size: 20px;
-    line-height: 43px;
     margin-top: -6px;
     height: 43px;
 }
@@ -216,7 +217,7 @@
 body {overflow-x: hidden;}
 }
 
-.main {
+.mainprod {
     overflow:hidden;
 }
 
