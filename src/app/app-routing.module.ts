@@ -12,9 +12,9 @@ const routerConfig: Routes = [
         //data: {animation: 'Home'}
     },
     {
-        path: 'sobre',
+        path: 'quemsomos',
         component: AboutComponent,
-        data: {animation: 'Products'}
+        //data: {animation: 'Products'}
     },
     {
         path: 'produtos',

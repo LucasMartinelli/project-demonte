@@ -15,16 +15,8 @@ export class HomeComponent implements OnInit {
   imgs = [1,2,3,4,5,6,7,8,9,10];
   depoimentos = [
     {
-      texto: "depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 depoimento1 ",
-      pessoa: "fulano de tal1",
-    },
-    {
-      texto: "depoimento2 depoimento2 depoimento2 depoimento2 depoimento2 depoimento2 depoimento2 <br> depoimento2 depoimento2 depoimento2",
-      pessoa: "fulano de tal2",
-    },
-    {
-      texto: "depoimento depoimento3 depoimento3 depoimento3",
-      pessoa: "fulano de tal3",
+      texto: "Em Construção",
+      pessoa: "Em Construção",
     },
   ];
 
@@ -43,6 +35,10 @@ export class HomeComponent implements OnInit {
       el: '.swiper-pagination',
       type: 'bullets',
       bulletActiveClass: 'teste',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     breakpoints: {
       // when window width is >= 320px

@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll(event) {
-    if (window.scrollY > 60) {
+    if (window.scrollY > 40) {
       this.sticky = true;
     } else {
       this.sticky = false;
